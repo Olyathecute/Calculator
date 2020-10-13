@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styleCalculator.css">
+</head>
+<body>
+    
+    <h1>Calculator</h1> 
+    <div style="text-align: center">
+        <input type="button" onclick="writeNumbers(this.value)" id="one"  value="1">
+        <input type="button" onclick="writeNumbers(this.value)" id="two" value="2">
+        <input type="button" onclick="writeNumbers(this.value)" id="three" value="3">
+        <input type="button" onclick="nextNumber(this.value)" id="plus" value="+">
+        <br>
+        <input type="button" onclick="writeNumbers(this.value)" id="four" value="4"> 
+        <input type="button" onclick="writeNumbers(this.value)" id="five" value="5">
+        <input type="button" onclick="writeNumbers(this.value)" id="six" value="6">
+        <input type="button" onclick="nextNumber(this.value)" id="minus" value="-">
+        <br>
+        <input type="button" onclick="writeNumbers(this.value)" id="seven" value="7">
+        <input type="button" onclick="writeNumbers(this.value)" id="eight" value="8">
+        <input type="button" onclick="writeNumbers(this.value)" id="nine" value="9">
+        <input type="button" onclick="nextNumber(this.value)" id="multi" value="*">
+        <br>
+        <input type="button" onclick="c()" value="C">
+        <input type="button" onclick="writeNumbers(this.value)" id="zero" value="0">
+        <input type="button" onclick="writeNumbers(this.value); blockPoint(this);" id="point" value=".">
+        <input type="button" onclick="nextNumber(this.value)" id="div" value="/">
+        <br>
+        <input type="button" onclick="result()" value="=">
+    </div>
+    <br>
+    <div style="text-align: center">
+        <input disabled type="text" id="demo">
+        <br>
+        <input disabled type="text" id="sign">
+        <br>
+        <input disabled type="text" id="num">
+        <br>
+        <input disabled type="text" id="equal" value='=' hidden>
+        <br>
+        <input disabled type="text" id="result">
+    </div>
+         
+<script src="calculator.js"></script>
+</body>
+</html>
